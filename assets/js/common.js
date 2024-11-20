@@ -54,7 +54,7 @@ function RevealData(dataFields) {
 }
 
 // Fetch json data and populate the DOM
-fetch('/data.json').then((response) => {  
+fetch('data.json').then((response) => {  
     if(!response.ok) return console.log('Data not found');
     return response.json();
   }).then((data) => {
